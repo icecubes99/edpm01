@@ -11,8 +11,11 @@ import HowDidYouHearAboutUs from "../ui/HowDidYouHearAboutUs";
 
 const AddContact = () => {
   return (
-    <Form action={create} className="w-full  m-auto">
-      <div className="flex ">
+    <Form
+      action={create}
+      className="w-full m-auto flex flex-col justify-center items-center"
+    >
+      <div className="flex w-1/2 flex-col items-center gap-5">
         <FirstName name="firstName" type="text" placeholder="First Name" />
         <LastName name="lastName" type="text" placeholder="Last Name" />
         <PhoneNumber
@@ -26,7 +29,7 @@ const AddContact = () => {
           type="text"
           placeholder="How Did You Hear About Us?"
         />
-        <Input name="input" type="text" placeholder="Add Contact Details" />
+        <Input name="input" type="text" placeholder="Message" />
         <Button type="submit" text="Add" />
       </div>
     </Form>
